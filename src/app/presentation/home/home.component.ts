@@ -12,7 +12,6 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
     this.logIn()
-    console.log("Se consume el login")
   }
   logIn(){
     this.http.get('http://localhost:8082/usuarios').subscribe(response => {
