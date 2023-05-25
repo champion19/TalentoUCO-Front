@@ -1,5 +1,4 @@
 import { NgModule } from "@angular/core";
-import { CoreModule } from "../core/core.module";
 import { PresentationRoutingModule } from "./presentation-routing.module";
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -9,6 +8,7 @@ import { DetailsComponent } from './details/details.component';
 import { CommonModule } from "@angular/common";
 import { LoginComponent } from './login/login.component';
 import { OffersModule } from "./offers/offers.module";
+import {CoreModule} from "@core/core.module";
 
 
 @NgModule({

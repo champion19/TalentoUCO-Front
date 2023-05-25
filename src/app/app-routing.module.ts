@@ -4,6 +4,7 @@ import { AuthGuard } from '@core/guard/auth.guard';
 import { SecurityGuard } from '@core/guard/security.guard';
 import { Role } from '@shared/role/model/Role';
 import { DetailsComponent } from './presentation/details/details.component';
+import { HomeComponent } from './feature/home/component/home.component';
 
 
 const routes: Routes = [
@@ -15,7 +16,7 @@ const routes: Routes = [
   },
   {
     path: 'home',
-    loadChildren: () => import('@home/home.module').then(mod => mod.HomeModule)
+    component:HomeComponent
   },
   {
     path: 'user',
@@ -24,7 +25,7 @@ const routes: Routes = [
     data: { rolesEsperados: [ Role.ADMINISTRADOR, Role.ESTUDIANTE ]}
   },
   {
-    path:"details",
+    path: 'details',
     component: DetailsComponent
   },
   {
