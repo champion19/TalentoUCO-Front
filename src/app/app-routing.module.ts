@@ -5,6 +5,7 @@ import { SecurityGuard } from '@core/guard/security.guard';
 import { Role } from '@shared/role/model/Role';
 import { DetailsComponent } from './presentation/details/details.component';
 import { HomeComponent } from './feature/home/component/home.component';
+import { ListComponent } from './presentation/offers/list/list.component';
 
 
 const routes: Routes = [
@@ -39,8 +40,8 @@ const routes: Routes = [
     loadChildren: () => import('../app/presentation/dashboard/dashboard.module').then((module)=>module.DashboardModule),
   },
   {
-    path: 'offers',
-    loadChildren:()=>import('../app/presentation/offers/offers.module').then((module)=>module.OffersModule),
+    path:'offers',
+    loadChildren:()=>import('../app/presentation/offers/offers-routing.module').then(mod=>mod.OffersRoutingModule),
   }
 ];
 
