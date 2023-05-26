@@ -17,7 +17,7 @@ listOffers=[
       modality: "Remoto"
     },
     {
-      id: 1,
+      id: 2,
       title: "Database Administrator",
       status: 'En Revision',
       date_status: 'Enviada a revisión: 2023-05-11 - 11:45',

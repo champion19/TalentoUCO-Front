@@ -1,3 +1,5 @@
+import { MainOffersComponent } from './presentation/offers/main-offers/main-offers.component';
+import { OffersModule } from './presentation/offers/offers.module';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AuthGuard } from '@core/guard/auth.guard';
@@ -41,8 +43,13 @@ const routes: Routes = [
   },
   {
     path:'offers',
-    loadChildren:()=>import('../app/presentation/offers/offers-routing.module').then(mod=>mod.OffersRoutingModule),
+    loadChildren:()=>import('../app/presentation/offers/offers.module').then((module) =>module.OffersModule),
+  },
+  {
+     path:'mainOffers',
+     loadChildren:()=>import('../app/presentation/offers/offers-routing.module').then((module) =>module.OffersRoutingModule),
   }
+
 ];
 
 @NgModule({
