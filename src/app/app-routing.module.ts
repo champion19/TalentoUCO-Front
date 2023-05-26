@@ -43,7 +43,7 @@ const routes: Routes = [
   },
   {
     path:'offers',
-    loadChildren:()=>import('../app/presentation/offers/offers.module').then((module) =>module.OffersModule),
+    component:ListComponent
   },
   {
      path:'mainOffers',
