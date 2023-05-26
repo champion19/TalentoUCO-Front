@@ -29,7 +29,8 @@ const routes: Routes = [
   },
   {
     path: 'details',
-    component: DetailsComponent
+    component:DetailsComponent
+
   },
   {
     path: 'vehicle',
@@ -47,9 +48,8 @@ const routes: Routes = [
   },
   {
      path:'mainOffers',
-     loadChildren:()=>import('../app/presentation/offers/offers-routing.module').then((module) =>module.OffersRoutingModule),
+     loadChildren:()=>import('../app/presentation/offers/offers.module').then((module) =>module.OffersModule),
   }
-
 ];
 
 @NgModule({
