@@ -4,7 +4,18 @@ module.exports = {
     "./src/**/*.{html,ts}",
   ],
   theme: {
-    extend: {},
+    fontFamily:{
+    'redhat' : ['"Red Hat Display"', 'sans-serif']
+    },
+    extend: {
+      fontFamily: {
+        'fontawesome': ['Font Awesome 5 Free']
+      },
+      fontSize: {
+        '3xl': '2rem',
+        '4xl': '2.5rem'
+      },
+    },
   },
   plugins: [],
 }
