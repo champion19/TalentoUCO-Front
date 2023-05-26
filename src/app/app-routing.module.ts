@@ -4,6 +4,7 @@ import { AuthGuard } from '@core/guard/auth.guard';
 import { SecurityGuard } from '@core/guard/security.guard';
 import { Role } from '@shared/role/model/Role';
 import { ListComponent } from './presentation/offers/list/list.component';
+import { DetailsComponent } from './presentation/details/details.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -31,6 +32,10 @@ const routes: Routes = [
   {
     path:'offers',
     loadChildren:()=>import('../app/presentation/offers/offers-routing.module').then(mod=>mod.OffersRoutingModule),
+  },
+  {
+    path:'details',
+    component:DetailsComponent
   }
 ];
 
