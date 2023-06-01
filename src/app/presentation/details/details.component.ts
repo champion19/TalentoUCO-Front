@@ -12,13 +12,13 @@ export class DetailsComponent implements OnInit {
       id: 1,
       name: "Emmanuel Londoño Gomez ",
       role: "Frontend Designer",
-      imageProfile: "../../../assets/imgs/emmanuel.png",
+      imageProfile:"../src/assets/imgs/emmanuel.png",
     },
     {
       id: 2,
       name: "Anderson Paz",
       role: "FullStack Developer",
-      imageProfile: "../../../assets/imgs/anderson.png",
+      imageProfile: "../src/assets/imgs/anderson.png",
     },
     {
       id: 3,
